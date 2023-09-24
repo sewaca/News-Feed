@@ -1,0 +1,8 @@
+.postsPage {
+  padding: 32px 0;
+}
+.postsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

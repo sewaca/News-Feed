@@ -1,0 +1,20 @@
+.postCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px 16px;
+  min-height: 100vh;
+}
+.postCard h1 {
+  color: #111;
+}
+.postCard h1 span {
+  color: #3e36d2;
+  margin-right: 10px;
+}
+.postCard p {
+  max-width: 600px;
+  text-align: center;
+}
