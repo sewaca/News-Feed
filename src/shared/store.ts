@@ -10,6 +10,3 @@ export const createStore = () => {
       getDefaultMiddleware().concat(postAPI.middleware),
   });
 };
-
-export type AppStore = ReturnType<typeof createStore>;
-export type AppDispatch = AppStore["dispatch"];

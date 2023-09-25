@@ -8,6 +8,7 @@ export const postAPI = createApi({
   }),
   tagTypes: ["Post"],
   endpoints: (build) => ({
+    // request gets all posts
     getPosts: build.query<IPost[], number>({
       query: (page: number = 1) => ({
         url: "/posts",
@@ -17,7 +18,7 @@ export const postAPI = createApi({
         },
       }),
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      providesTags: (result) => ["Post"],
+      providesTags: () => ["Post"],
       serializeQueryArgs: ({ endpointName }) => {
         return endpointName;
       },
@@ -28,6 +29,7 @@ export const postAPI = createApi({
         return currentArg !== previousArg;
       },
     }),
+    // request gets a post by id
     getPostById: build.query<IPost[], number>({
       query: (id: number = -1) => ({
         url: "/posts",

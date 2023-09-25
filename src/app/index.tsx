@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Routing } from "~/pages";
+import { Routing } from "~/pages/routing";
 import { Provider } from "react-redux";
 import { createStore } from "~/shared/store";
 import "./index.css";
